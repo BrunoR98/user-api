@@ -7,8 +7,8 @@ const getUserByIdValidator = [
     .withMessage('userId is mandatory')
     .isNumeric()
     .withMessage('userId must be a number')
-    .isInt({ min: 0 })
-    .withMessage('userId must be a non-negative number'),
+    .isInt({ min: 1 })
+    .withMessage('userId must be a positive number'),
 ];
 
 const createUserValidator = [
@@ -31,8 +31,8 @@ const createUserValidator = [
     .withMessage('Age is mandatory')
     .isNumeric()
     .withMessage('Age must be a number')
-    .isInt({ min: 0 })
-    .withMessage('Age must be a non-negative number'),
+    .isInt({ min: 1 })
+    .withMessage('Age must be a positive number'),
   body().custom(
     validateRequestProps.validateExtraProps(['name', 'email', 'age']),
   ),
@@ -44,8 +44,8 @@ const completeUpdateUserValidator = [
     .withMessage('userId is mandatory')
     .isNumeric()
     .withMessage('userId must be a number')
-    .isInt({ min: 0 })
-    .withMessage('userId must be a non-negative number'),
+    .isInt({ min: 1 })
+    .withMessage('userId must be a positive number'),
   body('name')
     .notEmpty()
     .withMessage('Name is mandatory')
@@ -65,8 +65,8 @@ const completeUpdateUserValidator = [
     .withMessage('Age is mandatory')
     .isNumeric()
     .withMessage('Age must be a number')
-    .isInt({ min: 0 })
-    .withMessage('Age must be a non-negative number'),
+    .isInt({ min: 1 })
+    .withMessage('Age must be a positive number'),
   body().custom(
     validateRequestProps.validateExtraProps(['name', 'email', 'age']),
   ),
@@ -81,8 +81,8 @@ const partialUpdateUserValidator = [
     .withMessage('userId is mandatory')
     .isNumeric()
     .withMessage('userId must be a number')
-    .isInt({ min: 0 })
-    .withMessage('userId must be a non-negative number'),
+    .isInt({ min: 1 })
+    .withMessage('userId must be a positive number'),
   body('name')
     .optional()
     .isString()
@@ -96,8 +96,8 @@ const partialUpdateUserValidator = [
     .optional()
     .isNumeric()
     .withMessage('Age must be a number')
-    .isInt({ min: 0 })
-    .withMessage('Age must be a non-negative number'),
+    .isInt({ min: 1 })
+    .withMessage('Age must be a positive number'),
   body().custom(
     validateRequestProps.validateExtraProps(['name', 'email', 'age']),
   ),
@@ -109,8 +109,8 @@ const deleteUserByIdValidator = [
     .withMessage('userId is mandatory')
     .isNumeric()
     .withMessage('userId must be a number')
-    .isInt({ min: 0 })
-    .withMessage('userId must be a non-negative number'),
+    .isInt({ min: 1 })
+    .withMessage('userId must be a positive number'),
 ];
 
 const userValidators = {
