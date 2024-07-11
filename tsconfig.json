@@ -1,15 +1,13 @@
 {
-    "compilerOptions": {
-      "target": "ES6",                            // Versión de ECMAScript a la que se compilará
-      "module": "commonjs",                       // Sistema de módulos usado
-      "outDir": "./dist",                         // Carpeta de salida para los archivos compilados
-      "rootDir": "./src",                         // Carpeta de origen para los archivos TypeScript
-      "strict": true,                             // Habilitar todas las verificaciones estrictas
-      "esModuleInterop": true,                    // Habilitar la interoperabilidad entre módulos ES6 y CommonJS
-      "skipLibCheck": true,                       // Omitir la comprobación de tipos en archivos de definición de librerías
-      "forceConsistentCasingInFileNames": true    // Asegurar el uso consistente de mayúsculas/minúsculas en los nombres de archivos
-    },
-    "include": ["src/**/*"],                        // Incluir todos los archivos en la carpeta src
-    "exclude": ["node_modules", "**/*.spec.ts"]     // Excluir archivos de módulos y pruebas de los archivos compilados
-  }
-  
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
