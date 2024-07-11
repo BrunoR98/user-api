@@ -100,6 +100,12 @@ const findUserByEmail = async (email: string): Promise<boolean> => {
 };
 
 const checkExistUser = async (email: string): Promise<void> => {
+  if (!email)
+    throw new HttpCustomException(
+      HttpStatusCode.BAD_REQUEST,
+      ErrorMessage.BAD_REQUEST,
+    );
+
   const existUser = await findUserByEmail(email);
   if (existUser) {
     throw new HttpCustomException(
