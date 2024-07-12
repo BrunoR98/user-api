@@ -76,56 +76,68 @@ y para detener la ejecución.
 
 ### Ejemplos de uso de los endpoints
 
-- Crear un usuario.
+## Crear un usuario.
 
+### POST 
 ```
-POST http://localhost:3000/api/users
-
-body {
+http://localhost:3000/api/users
+```
+### body
+```
+{
     "name": "Testing",
     "email": "testing@gmail.com",
     "age": 20
 }
 ```
 
-- Obtener la lista de usuarios.
+## Obtener la lista de usuarios.
 
+### GET
 ```
-GET http://localhost:3000/api/users
-```
-
-- Obtener el usuario que se creo anteriormente.
-
-```
-GET http://localhost:3000/api/users/1
+http://localhost:3000/api/users
 ```
 
-- Actualizar todas las propiedades de un usuario.
+## Obtener el usuario que se creo anteriormente.
 
+### GET
 ```
-PUT http://localhost:3000/api/users/1
+http://localhost:3000/api/users/1
+```
 
-body {
+## Actualizar todas las propiedades de un usuario.
+
+### PUT
+```
+http://localhost:3000/api/users/1
+```
+### body
+```
+{
     "name": "Testing2",
     "email": "testing2@gmail.com",
     "age": 25
 }
 ```
 
-- Actualizar algunas propiedades de un usuario.
+## Actualizar algunas propiedades de un usuario.
 
+### PATCH
 ```
-PATCH http://localhost:3000/api/users/1
-
-body {
+http://localhost:3000/api/users/1
+```
+### body
+```
+{
     "email": "production@gmail.com",
 }
 ```
 
-- Elimina el usuario creado anteriormente.
+## Elimina el usuario creado anteriormente.
 
+### DELETE
 ```
-DELETE http://localhost:3000/api/users/1
+http://localhost:3000/api/users/1
 ```
 
 
