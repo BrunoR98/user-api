@@ -1,4 +1,4 @@
-import { ErrorMessage, HttpStatusCode } from '../enum/Error.enum';
+import { ErrorMessage, HttpStatusCode } from '../enum/error.enum';
 
 export class HttpCustomException extends Error {
   public status: number;

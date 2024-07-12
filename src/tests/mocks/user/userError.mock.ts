@@ -1,4 +1,4 @@
-import { ErrorMessage, HttpStatusCode } from '../../../enum/Error.enum';
+import { ErrorMessage, HttpStatusCode } from '../../../enum/error.enum';
 import { HttpCustomException } from '../../../exceptions/httpCustomException';
 
 const emptyUserListError = new HttpCustomException(

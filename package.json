@@ -2,7 +2,7 @@
   "name": "user-api",
   "version": "1.0.0",
   "description": "Technical test Global",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",

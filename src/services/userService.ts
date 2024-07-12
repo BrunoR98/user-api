@@ -1,7 +1,7 @@
-import { ErrorMessage, HttpStatusCode } from '../enum/Error.enum';
+import { ErrorMessage, HttpStatusCode } from '../enum/error.enum';
 import { HttpCustomException } from '../exceptions/httpCustomException';
-import { CreateUserRequest } from '../interfaces/user/request/CreateUserRequest.interface';
-import { UpdateUserRequest } from '../interfaces/user/request/UpdateUserRequest.interface';
+import { CreateUserRequest } from '../interfaces/user/request/createUserRequest.interface';
+import { UpdateUserRequest } from '../interfaces/user/request/updateUserRequest.interface';
 import { User } from '../models/user.model';
 
 const users: User[] = [];

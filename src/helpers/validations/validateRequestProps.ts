@@ -1,6 +1,6 @@
 import { CustomValidator } from 'express-validator';
 import { HttpCustomException } from '../../exceptions/httpCustomException';
-import { HttpStatusCode } from '../../enum/Error.enum';
+import { HttpStatusCode } from '../../enum/error.enum';
 
 const validateExtraProps = (allowedProps: string[]): CustomValidator => {
   return (value, { req }) => {
