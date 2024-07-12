@@ -129,7 +129,7 @@ http://localhost:3000/api/users/1
 ### body
 ```
 {
-    "email": "production@gmail.com",
+    "email": "production@gmail.com"
 }
 ```
 
