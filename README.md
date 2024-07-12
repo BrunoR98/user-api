@@ -74,7 +74,9 @@ y para detener la ejecución.
 ./stop.sh
 ```
 
-### Ejemplos de uso de los endpoints
+## Ejemplos de uso de los endpoints
+
+Mediante Postman u otra herramienta a disposición se podrán probar los endpoints de la aplicación.
 
 ## Crear un usuario.
 
